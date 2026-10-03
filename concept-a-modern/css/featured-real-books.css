@@ -1,0 +1,13 @@
+/* Scoped actual book display; all existing Hero/Navigation styles remain inherited. */
+.featured .cover-stage{height:330px;padding:20px 18px;background:#f5f7fa;border-radius:6px;overflow:hidden}
+.featured .book-card{--book-ratio:.7777778;--cover-height:286px}
+.featured .book-3{--book-ratio:.7727273}
+.featured .book-4{--book-ratio:.75;--cover-height:290px}
+.featured .cover-stage img{width:min(100%,calc(var(--cover-height) * var(--book-ratio)));height:auto;max-width:100%;max-height:none;object-fit:contain;box-shadow:0 8px 18px #19304717;transform:none}
+.featured .book-link:hover .cover-stage img{transform:translateY(-3px)}
+.featured .book-meta{padding:18px 4px 14px}
+.featured .book-meta h3{font-size:19px;line-height:1.4;letter-spacing:-.035em}
+@media(min-width:901px) and (max-width:1200px){.featured .cover-stage{height:276px;padding:19px 12px}.featured .book-card{--cover-height:234px}.featured .book-4{--cover-height:238px}.featured .book-meta h3{font-size:17px}}
+@media(max-width:900px){.featured .cover-stage{height:310px}.featured .book-card{--cover-height:266px}.featured .book-4{--cover-height:270px}}
+@media(max-width:600px){.featured .cover-stage{height:235px;padding:18px 12px}.featured .book-card{--cover-height:195px}.featured .book-4{--cover-height:199px}.featured .book-meta h3{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.featured .cover-stage img{transition:none}.featured .book-link:hover .cover-stage img{transform:none}}

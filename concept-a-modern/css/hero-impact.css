@@ -1,0 +1,10 @@
+/* Isolated A impact study: book composition, Hero blue and GNB typography only. */
+.hero-art-three{padding:24px 22px 44px;background:#d8e7f7}
+.three-book-scene{width:min(100%,605px);height:392px}
+.book-center{width:46.3%;left:26.85%;top:12px;transform:rotate(1deg)}
+.book-left{width:39.8%;left:0;top:43px;transform:rotate(-3deg)}
+.book-right{width:38.1%;right:0;top:65px;transform:rotate(3deg)}
+.composition-book img{box-shadow:0 16px 30px #263f591a}
+.gnb{font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:16px;font-weight:650;letter-spacing:-.025em;color:#173451;gap:12px;flex-wrap:nowrap}
+@media(min-width:901px) and (max-width:1400px){.hero-art-three{padding-inline:18px}.book-center{width:49%;left:25.5%;top:20px}.book-left{width:42.1%;top:48px}.book-right{width:40.2%;top:67px}}
+@media(min-width:901px) and (max-width:1200px){.gnb{font-size:14px;gap:8px}.three-book-scene{height:365px}.book-center{top:38px}.book-left{top:62px}.book-right{top:80px}}

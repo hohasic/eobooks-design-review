@@ -1,0 +1,26 @@
+/* Only teacher-resource presentation. Same content and static interaction. */
+.teacher-resources{padding:44px 0 30px;background:#f7f9fc}
+.teacher-heading{margin-bottom:18px}.teacher-heading p{margin-top:12px}
+.teacher-flow{padding-bottom:16px}
+.teacher-explorer{border-color:#e1e8f0;border-radius:6px}
+.teacher-finder{padding:18px 26px;background:#f8fafd;border-bottom-color:#e4eaf2}
+.finder-caption{margin-bottom:12px}.finder-caption>span{font-size:14px;font-weight:600;color:#526b84}
+.finder-fields label{font-size:11px;margin-bottom:6px;color:#526b84}
+.finder-fields select{min-height:42px;padding-block:8px;border-color:#dce5ee}
+.finder-fields .button{min-height:42px;padding:8px 18px;font-size:12px}
+.teacher-workspace{padding:24px 26px;grid-template-columns:.95fr 1.5fr;gap:30px}
+.teacher-book-context{gap:20px;padding-right:24px;align-items:center}
+.teacher-cover{width:162px}
+.teacher-book-context h3{font-size:23px;margin:9px 0 7px}
+.teacher-book-context .tag{background:transparent;padding:0;color:#526f92;font-size:10px}
+.book-resource-link{margin-top:18px;color:#526b84}
+.unit-row{margin-bottom:16px}.unit-row label{font-size:16px;color:#173451}.unit-caption{font-size:11px;color:#526f92}.unit-row select{border-color:#bed1e5;min-height:44px}
+.resource-lane{padding:20px 16px;border-radius:4px}
+.resource-lane:first-child{background:#f4f8fd;border-color:#c9ddef}
+.resource-lane:last-child{background:#fcfdfe;border-color:#dde6ef}
+.resource-lane h3{font-size:19px;color:#173451}.resource-lane small{font-size:10px;color:#526f92}
+.resource-lane:first-child:hover{background:#eaf3fc;border-color:#a9c6e7}
+.resource-lane:last-child:hover{background:#f1f6fb;border-color:#bdcfe3}
+.teacher-file-formats{margin-top:15px}.teacher-status{margin-top:10px}.teacher-demo-note{margin-top:12px}
+@media(min-width:901px) and (max-width:1200px){.teacher-finder{padding:17px 20px}.teacher-workspace{padding:22px 20px;grid-template-columns:.9fr 1.4fr;gap:20px}.teacher-cover{width:123px}.teacher-book-context{gap:14px;padding-right:16px}.teacher-book-context h3{font-size:20px}.resource-lane{padding:18px 12px}.resource-lane h3{font-size:17px}.finder-fields .button{padding-inline:12px}.teacher-heading p{font-size:14px}}
+@media(max-width:900px){.teacher-workspace{grid-template-columns:1fr}.teacher-cover{width:150px}.teacher-book-context{padding-right:0}}

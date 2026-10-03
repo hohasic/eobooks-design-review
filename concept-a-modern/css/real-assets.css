@@ -1,0 +1,18 @@
+/* Concept A asset test only. Base Step 3 design and semantic tokens stay intact. */
+.real-logo{width:178px;height:44px;flex-shrink:0;display:block;position:relative}
+.real-logo-viewport{display:block;width:178px;height:44px;overflow:hidden;position:relative}
+/* Original PNG is 642×113, alpha bounds x=120..575. Clip only empty margins. */
+.real-logo-viewport img{position:absolute;left:-46.7257px;top:0;width:249.9823px;height:44px;max-width:none;object-fit:contain}
+.site-footer .real-logo{height:44px}
+.account-header .real-logo,.account-header .real-logo-viewport{width:182px;height:45px}
+.account-header .real-logo-viewport img{width:255.6637px;height:45px;left:-47.7876px}
+.gnb{font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:15px;font-weight:600;line-height:1.55;letter-spacing:-.025em}
+.hero-art-real{padding:28px 42px 48px;background:#e4edf7}
+.book-scene{display:flex;align-items:center;justify-content:center;position:relative;width:100%;height:100%;min-height:340px}
+.book-object{position:relative;max-width:100%;transform:perspective(1100px) rotateY(-8deg) rotateZ(1deg);transform-origin:50% 60%}
+.book-object:before{content:"";position:absolute;left:-5px;top:1px;bottom:1px;width:5px;background:#f2f4f0;border:1px solid #c8d3de;border-right:0;box-shadow:-1px 0 2px #1b36511a}
+.hero-art-real .real-textbook{width:260px;max-width:100%;height:auto;object-fit:contain;display:block;border:1px solid #d6dfe7;border-radius:1px;box-shadow:13px 17px 26px #263f5929;background:#fff}
+.hero-art-real .art-label{bottom:20px;font:11px/1.5 "Malgun Gothic",sans-serif;letter-spacing:.04em;color:#55677c}
+.test-version-link{white-space:nowrap}
+@media(min-width:901px) and (max-width:1200px){.gnb{font-size:13px;letter-spacing:-.025em}.hero-art-real{padding-inline:25px}.hero-art-real .real-textbook{width:245px}.real-logo{width:169px;height:42px}.real-logo-viewport{width:169px;height:42px}.real-logo-viewport img{width:238.6195px;height:42px;left:-44.6018px}}
+@media(prefers-reduced-motion:reduce){.book-object{transition:none}}

@@ -1,0 +1,33 @@
+/* Scoped scene composition; existing navigation, books and interactions remain inherited. */
+.teacher-resources{background:#f2f6fa;padding-block:46px 32px;border-block:0;position:relative}
+.teacher-heading{margin-bottom:24px}
+.teacher-flow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;padding:0;margin:0 0 22px;position:relative}
+.teacher-flow>span[aria-hidden]{display:none}
+.teacher-flow>span:not([aria-hidden]){display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:2px solid #c6d7e7;position:relative;background:#edf3f8}
+.teacher-flow>span:not([aria-hidden])+span+span:not([aria-hidden]){border-left:1px solid #d7e3ed}
+.teacher-flow b{display:grid;place-items:center;width:28px;height:28px;background:#fff;color:#235582;margin:0;font-size:11px}
+.teacher-explorer{border:0;border-radius:0;background:transparent;overflow:visible}
+.teacher-finder{padding:0 0 22px;background:transparent;border-bottom:0}
+.teacher-workspace{padding:0;gap:0;grid-template-columns:.95fr 1.5fr;background:white;border-top:1px solid #d2e0eb}
+.teacher-book-context{padding:28px 26px;border:0;position:relative;background:linear-gradient(90deg,#e7f0f8,#edf4fa);gap:20px}
+.teacher-book-context:after{content:'→';position:absolute;right:-15px;top:50%;width:30px;height:30px;display:grid;place-items:center;background:white;color:#497ba6;z-index:1;border:1px solid #d2e0eb}
+.teacher-resource-context{padding:26px 30px}
+.unit-row{padding-bottom:18px;border-bottom:1px solid #dbe6ef}
+.resource-lane{border:0!important;border-top:2px solid #aac7e3!important;border-radius:0;padding:19px 16px}
+.resource-lane:last-child{border-top-color:#c5d5e4!important}
+.teacher-demo-note{margin-top:16px}
+.digital{display:grid;grid-template-columns:1.1fr 1fr;grid-template-rows:auto auto;gap:22px 30px;padding:42px 48px;background:#153753;border:0;color:#edf5fc;position:relative;isolation:isolate;overflow:hidden}
+.digital:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 85% 45%,#2b5a7d55,transparent 55%);z-index:-1}
+.digital>div:nth-child(2){grid-column:1;grid-row:1;align-self:end}
+.digital h2{color:#fff;font-size:32px;letter-spacing:-.045em}
+.digital p{color:#c3d6e7;font-size:14px;margin-top:15px}
+.digital .eyebrow{color:#a9cce9}
+.digital-graphic{grid-column:2;grid-row:1/3;width:100%;height:230px;align-self:center;color:#a9cce9}
+.digital-action{grid-column:1;grid-row:2;align-items:start}
+.digital-action .button.secondary{background:#eef6fc;color:#173e61;border-color:transparent;min-height:44px}
+.digital-action .button.secondary:hover{background:#dcecf9}
+.digital-action small{color:#bed0df}
+.digital a:focus-visible{outline-color:#d8ecff}
+@media(min-width:901px) and (max-width:1200px){.teacher-book-context{padding:24px 18px;gap:14px}.teacher-resource-context{padding:24px 22px}.teacher-workspace{padding:0;gap:0;grid-template-columns:.9fr 1.4fr}.teacher-flow>span:not([aria-hidden]){padding:12px 16px}.digital{padding:36px 32px;gap:20px}.digital h2{font-size:28px}.digital-graphic{height:210px}}
+@media(max-width:900px){.teacher-workspace{grid-template-columns:1fr}.teacher-book-context:after{display:none}.teacher-flow{display:flex;flex-wrap:wrap}.teacher-flow>span:not([aria-hidden]){flex:1;white-space:nowrap}.digital{grid-template-columns:1fr}.digital-graphic{display:none}.digital>div:nth-child(2),.digital-action{grid-column:1}.teacher-resource-context{padding:24px}}
+@media(prefers-reduced-motion:reduce){.digital *{transition:none}}
